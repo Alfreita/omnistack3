@@ -28,7 +28,7 @@ export default function Main({ navigation }) {
     }
     loadUsers();
   }, [id]);
-
+ 
   async function handleLike() {
     const [user, ...rest] = users;
     await api.post(`/devs/${user._id}/likes`, null, {
